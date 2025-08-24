@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">RailEase</string>
+    <string name="sample_email">johndoe@example.com</string>
+    <string name="sample_name">John Doe</string>
+    <string name="register_page_description">Enter your details to sign up for this app</string>
+    <string name="register_page_title">Create an account</string>
+    <string name="login_page_title">Good to see you again</string>
+    <string name="login_page_description">Access your travel history anywhere</string>
 </resources>

@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--60%-->
     <color name="primary">#FFFFFF</color>
+
+    <!--30%-->
+    <color name="secondary">#B8000000</color>
+
+    <!--10%-->
+    <color name="shadow">#1A000000</color>
+    <color name="input">#E0E0E0</color>
+    <color name="inputText">#828282</color>
+    <color name="contText">#000000</color>
 </resources>

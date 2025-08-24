@@ -12,7 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RailEase">
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterPage"
+            android:exported="false" />
+        <activity
+            android:name=".OnboardingScreenThree"
+            android:exported="false" />
+        <activity
+            android:name=".OnboardingScreenTwo"
+            android:exported="false" />
+        <activity
+            android:name=".OnboardingScreenOne"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
