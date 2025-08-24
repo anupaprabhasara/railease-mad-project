@@ -75,7 +75,7 @@
                 tools:ignore="Autofill,HardcodedText,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
 
             <Button
-                android:id="@+id/register"
+                android:id="@+id/login"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginTop="16dp"

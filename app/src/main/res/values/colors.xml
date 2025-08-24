@@ -11,4 +11,5 @@
     <color name="input">#E0E0E0</color>
     <color name="inputText">#828282</color>
     <color name="contText">#000000</color>
+    <color name="search_bg">#F5F5F5</color>
 </resources>
