@@ -6,4 +6,5 @@
     <string name="register_page_title">Create an account</string>
     <string name="login_page_title">Good to see you again</string>
     <string name="login_page_description">Access your travel history anywhere</string>
+    <string name="search_page_title">Search</string>
 </resources>

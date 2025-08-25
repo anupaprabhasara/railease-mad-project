@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RailEase">
         <activity
+            android:name=".SearchScreen"
+            android:exported="false" />
+        <activity
             android:name=".HomePage"
             android:exported="false" />
         <activity
