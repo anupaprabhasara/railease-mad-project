@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RailEase">
         <activity
+            android:name=".BookingPage"
+            android:exported="false" />
+        <activity
+            android:name=".SearchResult"
+            android:exported="false" />
+        <activity
             android:name=".SearchScreen"
             android:exported="false" />
         <activity
