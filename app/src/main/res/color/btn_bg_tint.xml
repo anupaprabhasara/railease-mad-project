@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-  
+    <!-- Disabled: faded background -->
+    <item android:state_enabled="false" android:color="#4D4D4D" />
+    <!-- Enabled: normal background -->
+    <item android:color="@color/secondary" />
 </selector>

@@ -50,18 +50,21 @@
                 android:textAlignment="center"
                 android:textSize="16sp" />
 
+            <!-- Email -->
             <EditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/rounded_edittext"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:text="@string/sample_email"
-                android:textColor="@color/inputText"
+                android:hint="@string/sample_email"
+                android:textColor="@color/secondary"
+                android:textColorHint="@color/inputText"
                 tools:ignore="Autofill,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
 
+            <!-- Password -->
             <EditText
                 android:id="@+id/password"
                 android:layout_width="match_parent"
@@ -70,16 +73,18 @@
                 android:background="@drawable/rounded_edittext"
                 android:ems="10"
                 android:inputType="textPassword"
-                android:text="password"
-                android:textColor="@color/inputText"
-                tools:ignore="Autofill,HardcodedText,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
+                android:hint="Password"
+                android:textColor="@color/secondary"
+                android:textColorHint="@color/inputText"
+                tools:ignore="Autofill,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
 
             <Button
                 android:id="@+id/login"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginTop="16dp"
-                android:backgroundTint="@color/secondary"
+                android:backgroundTint="@color/btn_bg_tint"
+                android:textColor="@color/btn_text_color"
                 android:text="Login"
                 android:textSize="16sp"
                 app:cornerRadius="12dp"

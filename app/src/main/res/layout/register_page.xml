@@ -50,6 +50,7 @@
                 android:textAlignment="center"
                 android:textSize="16sp" />
 
+            <!-- Full Name -->
             <EditText
                 android:id="@+id/fullName"
                 android:layout_width="match_parent"
@@ -58,10 +59,14 @@
                 android:background="@drawable/rounded_edittext"
                 android:ems="10"
                 android:inputType="text"
-                android:text="@string/sample_name"
-                android:textColor="@color/inputText"
+                android:hint="@string/sample_name"
+                android:textColor="@color/secondary"
+                android:textColorHint="@color/inputText"
+                android:imeOptions="actionNext"
+                android:autofillHints="name"
                 tools:ignore="Autofill,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
 
+            <!-- Email -->
             <EditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"
@@ -70,10 +75,14 @@
                 android:background="@drawable/rounded_edittext"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:text="@string/sample_email"
-                android:textColor="@color/inputText"
+                android:hint="@string/sample_email"
+                android:textColor="@color/secondary"
+                android:textColorHint="@color/inputText"
+                android:imeOptions="actionNext"
+                android:autofillHints="emailAddress"
                 tools:ignore="Autofill,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
 
+            <!-- Password -->
             <EditText
                 android:id="@+id/password"
                 android:layout_width="match_parent"
@@ -82,10 +91,14 @@
                 android:background="@drawable/rounded_edittext"
                 android:ems="10"
                 android:inputType="textPassword"
-                android:text="password"
-                android:textColor="@color/inputText"
-                tools:ignore="Autofill,HardcodedText,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
+                android:hint="Password"
+                android:textColor="@color/secondary"
+                android:textColorHint="@color/inputText"
+                android:imeOptions="actionNext"
+                android:autofillHints="password"
+                tools:ignore="Autofill,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
 
+            <!-- Confirm Password -->
             <EditText
                 android:id="@+id/confirmpwd"
                 android:layout_width="match_parent"
@@ -94,16 +107,20 @@
                 android:background="@drawable/rounded_edittext"
                 android:ems="10"
                 android:inputType="textPassword"
-                android:text="confirm password"
-                android:textColor="@color/inputText"
-                tools:ignore="Autofill,HardcodedText,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
+                android:hint="Confirm Password"
+                android:textColor="@color/secondary"
+                android:textColorHint="@color/inputText"
+                android:imeOptions="actionDone"
+                android:autofillHints="password"
+                tools:ignore="Autofill,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
 
             <Button
                 android:id="@+id/register"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginTop="16dp"
-                android:backgroundTint="@color/secondary"
+                android:backgroundTint="@color/btn_bg_tint"
+                android:textColor="@color/btn_text_color"
                 android:text="Register"
                 android:textSize="16sp"
                 app:cornerRadius="12dp"
