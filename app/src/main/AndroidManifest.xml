@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RailEase">
         <activity
+            android:name=".MyETickets"
+            android:exported="false" />
+        <activity
+            android:name=".ETicketPrint"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentApproved"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentProcess"
+            android:exported="false" />
+        <activity
             android:name=".BookingPage"
             android:exported="false" />
         <activity

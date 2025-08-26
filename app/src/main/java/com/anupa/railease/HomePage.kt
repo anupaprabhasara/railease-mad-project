@@ -1,6 +1,8 @@
 package com.anupa.railease
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,45 @@ class HomePage : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+//        val homePage = findViewById<ImageView>(R.id.homePage)
+//        homePage.setOnClickListener {
+//            val intent = Intent(this, HomePage::class.java)
+//            startActivity(intent)
+//            overridePendingTransition(
+//                R.anim.slide_in_right,
+//                R.anim.slide_out_left
+//            )
+//        }
+
+        val bookingPage = findViewById<ImageView>(R.id.bookingPage)
+        bookingPage.setOnClickListener {
+            val intent = Intent(this, BookingPage::class.java)
+            startActivity(intent)
+            overridePendingTransition(
+                R.anim.slide_in_right,
+                R.anim.slide_out_left
+            )
+        }
+
+//        val ticketsPage = findViewById<ImageView>(R.id.ticketsPage)
+//        ticketsPage.setOnClickListener {
+//            val intent = Intent(this, TicketsPage::class.java)
+//            startActivity(intent)
+//            overridePendingTransition(
+//                R.anim.slide_in_right,
+//                R.anim.slide_out_left
+//            )
+//        }
+
+//        val profilePage = findViewById<ImageView>(R.id.profilePage)
+//        profilePage.setOnClickListener {
+//            val intent = Intent(this, ProfilePage::class.java)
+//            startActivity(intent)
+//            overridePendingTransition(
+//                R.anim.slide_in_right,
+//                R.anim.slide_out_left
+//            )
+//        }
     }
 }

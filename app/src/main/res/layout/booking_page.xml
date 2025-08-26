@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary"
-    tools:context=".HomePage">
+    tools:context=".BookingPage">
 
     <!-- Top Bar -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -332,7 +332,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="163dp"
+                android:layout_height="128dp"
                 android:gravity="bottom"
                 android:orientation="horizontal"
                 android:paddingLeft="16dp"
