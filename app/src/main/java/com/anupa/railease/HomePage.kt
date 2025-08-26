@@ -21,10 +21,10 @@ class HomePage : AppCompatActivity() {
             insets
         }
 
-        val homePage = findViewById<ImageView>(R.id.homePage)
-        homePage.setOnClickListener {
-            startActivity(Intent(this, HomePage::class.java))
-        }
+//        val homePage = findViewById<ImageView>(R.id.homePage)
+//        homePage.setOnClickListener {
+//            startActivity(Intent(this, HomePage::class.java))
+//        }
 
         val bookingPage = findViewById<ImageView>(R.id.bookingPage)
         bookingPage.setOnClickListener {

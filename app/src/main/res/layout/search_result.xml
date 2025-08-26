@@ -100,6 +100,7 @@
 
             <!-- Search box (static mock) -->
             <LinearLayout
+                android:id="@+id/searchBox"
                 android:layout_width="match_parent"
                 android:layout_height="76dp"
                 android:layout_marginTop="12dp"
@@ -204,7 +205,7 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/bookBtn1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#282828"
@@ -244,7 +245,7 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/bookBtn2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#282828"
@@ -284,7 +285,7 @@
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/bookBtn3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#282828"
@@ -499,24 +500,28 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
+            android:id="@+id/homePage"
             android:layout_width="0dp"
             android:layout_height="28dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/home_selected" />
 
         <ImageView
+            android:id="@+id/bookingPage"
             android:layout_width="0dp"
             android:layout_height="28dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/cart_empty" />
 
         <ImageView
+            android:id="@+id/ticketsPage"
             android:layout_width="0dp"
             android:layout_height="28dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/tickets_empty" />
 
         <ImageView
+            android:id="@+id/profilePage"
             android:layout_width="0dp"
             android:layout_height="28dp"
             android:layout_weight="1"
