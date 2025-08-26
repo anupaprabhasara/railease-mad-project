@@ -437,7 +437,7 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <Button
-                android:id="@+id/login2"
+                android:id="@+id/placeOrder"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
                 android:layout_marginLeft="16dp"
@@ -477,28 +477,28 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/ivNavHome"
+            android:id="@+id/homePage"
             android:layout_width="0dp"
             android:layout_height="28dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/home_selected" />
+            app:srcCompat="@drawable/home_empty" />
 
         <ImageView
-            android:id="@+id/ivNavCart"
+            android:id="@+id/bookingPage"
             android:layout_width="0dp"
             android:layout_height="28dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/cart_empty" />
+            app:srcCompat="@drawable/cart_selected" />
 
         <ImageView
-            android:id="@+id/ivNavTickets"
+            android:id="@+id/ticketsPage"
             android:layout_width="0dp"
             android:layout_height="28dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/tickets_empty" />
 
         <ImageView
-            android:id="@+id/ivNavUser"
+            android:id="@+id/profilePage"
             android:layout_width="0dp"
             android:layout_height="28dp"
             android:layout_weight="1"
