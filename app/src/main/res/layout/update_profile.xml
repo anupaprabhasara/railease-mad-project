@@ -92,60 +92,61 @@
                     android:layout_height="652dp"
                     android:orientation="vertical">
 
+                <!-- Name -->
                 <EditText
+                        android:id="@+id/etName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:background="@drawable/rounded_edittext"
-                        android:ems="10"
                         android:hint="John Doe"
-                        android:inputType="textEmailAddress"
-                        android:textColorHint="@color/inputText"
-                        tools:ignore="Autofill,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
+                        android:inputType="textPersonName"
+                        android:textColorHint="@color/inputText" />
 
+                <!-- Email -->
                 <EditText
+                        android:id="@+id/etEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:background="@drawable/rounded_edittext"
-                        android:ems="10"
                         android:hint="john@example.com"
                         android:inputType="textEmailAddress"
-                        android:textColorHint="@color/inputText"
-                        tools:ignore="Autofill,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
+                        android:autoText="false"
+                        android:textColorHint="@color/inputText" />
 
+                <!-- Old Password -->
                 <EditText
+                        android:id="@+id/etOldPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:background="@drawable/rounded_edittext"
-                        android:ems="10"
                         android:hint="Old Password"
-                        android:inputType="textEmailAddress"
-                        android:textColorHint="@color/inputText"
-                        tools:ignore="Autofill,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/inputText" />
 
+                <!-- New Password -->
                 <EditText
+                        android:id="@+id/etNewPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:background="@drawable/rounded_edittext"
-                        android:ems="10"
                         android:hint="New Password"
-                        android:inputType="textEmailAddress"
-                        android:textColorHint="@color/inputText"
-                        tools:ignore="Autofill,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/inputText" />
 
+                <!-- Confirm Password -->
                 <EditText
+                        android:id="@+id/etConfirmPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:background="@drawable/rounded_edittext"
-                        android:ems="10"
                         android:hint="Confirm Password"
-                        android:inputType="textEmailAddress"
-                        android:textColorHint="@color/inputText"
-                        tools:ignore="Autofill,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/inputText" />
 
             </LinearLayout>
 
@@ -155,7 +156,7 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/login"
+                    android:id="@+id/updateProfile"
                     android:layout_width="match_parent"
                     android:layout_height="64dp"
                     android:backgroundTint="@color/secondary"
