@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RailEase">
         <activity
+            android:name=".MyProfile"
+            android:exported="false" />
+        <activity
             android:name=".MyETickets"
             android:exported="false" />
         <activity
