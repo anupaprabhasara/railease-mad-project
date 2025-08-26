@@ -111,6 +111,7 @@
 
             <!-- Search box (static mock) -->
             <LinearLayout
+                android:id="@+id/searchBox"
                 android:layout_width="match_parent"
                 android:layout_height="68dp"
                 android:orientation="horizontal"

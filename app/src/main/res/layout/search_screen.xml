@@ -87,99 +87,118 @@
             android:paddingLeft="16dp"
             android:paddingRight="16dp">
 
+            <!-- FORM CARD to match your soft cards elsewhere -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="680dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:clipToOutline="true"
+                android:elevation="2dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:orientation="vertical">
 
-                <EditText
+                <!-- Departure (Dropdown + type ahead; keeps rounded_edittext) -->
+                <AutoCompleteTextView
+                    android:id="@+id/departure"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="12dp"
                     android:background="@drawable/rounded_edittext"
-                    android:ems="10"
-                    android:inputType="textEmailAddress"
+                    android:dropDownWidth="match_parent"
+                    android:dropDownHeight="wrap_content"
+                    android:dropDownVerticalOffset="8dp"
                     android:hint="Enter departure station (e.g., Pettah)"
-                    android:textColorHint="@color/inputText"
-                    tools:ignore="Autofill,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
+                    android:inputType="text"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textColorHint="@color/inputText" />
 
-                <EditText
+                <!-- Destination (Dropdown + type ahead) -->
+                <AutoCompleteTextView
+                    android:id="@+id/destination"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="16dp"
                     android:background="@drawable/rounded_edittext"
-                    android:ems="10"
-                    android:inputType="textEmailAddress"
+                    android:dropDownWidth="match_parent"
+                    android:dropDownHeight="wrap_content"
+                    android:dropDownVerticalOffset="8dp"
                     android:hint="Enter destination station (e.g., Kandy)"
-                    android:textColorHint="@color/inputText"
-                    tools:ignore="Autofill,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
+                    android:inputType="text"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textColorHint="@color/inputText" />
 
+                <!-- Travel Date (non-typing; opens date picker) -->
                 <EditText
+                    android:id="@+id/travelDate"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="16dp"
                     android:background="@drawable/rounded_edittext"
-                    android:ems="10"
-                    android:inputType="textEmailAddress"
-                    android:hint="Select departure date"
-                    android:textColorHint="@color/inputText"
-                    tools:ignore="Autofill,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="Select travel date"
+                    android:inputType="none"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textColorHint="@color/inputText" />
 
+                <!-- Number of passengers -->
                 <EditText
+                    android:id="@+id/numOfTickets"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="16dp"
                     android:background="@drawable/rounded_edittext"
-                    android:ems="10"
-                    android:inputType="textEmailAddress"
-                    android:hint="Select return date (optional)"
-                    android:textColorHint="@color/inputText"
-                    tools:ignore="Autofill,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/rounded_edittext"
-                    android:ems="10"
-                    android:inputType="textEmailAddress"
                     android:hint="Enter number of passengers"
-                    android:textColorHint="@color/inputText"
-                    tools:ignore="Autofill,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
+                    android:inputType="number"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textColorHint="@color/inputText" />
 
-                <EditText
+                <!-- Train class (Dropdown) -->
+                <AutoCompleteTextView
+                    android:id="@+id/trainClass"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="16dp"
                     android:background="@drawable/rounded_edittext"
-                    android:ems="10"
-                    android:inputType="textEmailAddress"
+                    android:dropDownWidth="match_parent"
+                    android:dropDownHeight="wrap_content"
+                    android:dropDownVerticalOffset="8dp"
                     android:hint="Select travel class (e.g., 1st, 2nd, 3rd)"
-                    android:textColorHint="@color/inputText"
-                    tools:ignore="Autofill,LabelFor,TextContrastCheck,VisualLintTextFieldSize" />
+                    android:inputType="text"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textColorHint="@color/inputText" />
 
-            </LinearLayout>
+                <!-- Primary action button (keeps your style/colors) -->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/login"
-                    android:layout_width="match_parent"
-                    android:layout_height="64dp"
-                    android:backgroundTint="@color/secondary"
-                    android:text="Done"
-                    android:textSize="16sp"
-                    app:cornerRadius="12dp"
-                    tools:ignore="HardcodedText,VisualLintButtonSize" />
             </LinearLayout>
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
     <!-- Bottom bar divider (kept as a view for your drawable) -->
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/secondary"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomBarDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
 
     <View
         android:id="@+id/bottomBarDivider"
@@ -206,24 +225,28 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
+            android:id="@+id/homePage"
             android:layout_width="0dp"
             android:layout_height="28dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/home_selected" />
 
         <ImageView
+            android:id="@+id/bookingPage"
             android:layout_width="0dp"
             android:layout_height="28dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/cart_empty" />
 
         <ImageView
+            android:id="@+id/ticketsPage"
             android:layout_width="0dp"
             android:layout_height="28dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/tickets_empty" />
 
         <ImageView
+            android:id="@+id/profilePage"
             android:layout_width="0dp"
             android:layout_height="28dp"
             android:layout_weight="1"
