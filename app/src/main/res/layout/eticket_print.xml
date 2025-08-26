@@ -85,28 +85,28 @@
         app:srcCompat="@drawable/qr_code" />
 
     <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="102dp"
-        android:layout_marginTop="244dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/app_name"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="102dp"
+            android:layout_marginTop="240dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/app_name"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="244dp"
-        android:layout_marginEnd="104dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Ticket No. 939"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:layout_marginEnd="104dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Ticket No. 939"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView13"
@@ -124,7 +124,7 @@
         app:layout_constraintTop_toBottomOf="@id/imageView3" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/doneButton"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginStart="16dp"
@@ -165,28 +165,32 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="28dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/home_selected" />
+                android:id="@+id/homePage"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/home_empty" />
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="28dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/cart_empty" />
+                android:id="@+id/bookingPage"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/cart_empty" />
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="28dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/tickets_empty" />
+                android:id="@+id/ticketsPage"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/tickets_selected" />
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="28dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/user_empty" />
+                android:id="@+id/profilePage"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/user_empty" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

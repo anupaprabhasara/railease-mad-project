@@ -109,7 +109,7 @@
         app:layout_constraintTop_toBottomOf="@id/imageView3" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/viewETicket"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginStart="16dp"
@@ -150,28 +150,32 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="28dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/home_selected" />
+                android:id="@+id/homePage"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/home_empty" />
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="28dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/cart_empty" />
+                android:id="@+id/bookingPage"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/cart_selected" />
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="28dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/tickets_empty" />
+                android:id="@+id/ticketsPage"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/tickets_empty" />
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="28dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/user_empty" />
+                android:id="@+id/profilePage"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/user_empty" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
